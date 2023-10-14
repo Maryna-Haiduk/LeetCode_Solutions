@@ -10,6 +10,13 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
+            int counter = 0;
+            for (int i = 1; i < 16; ++i)
+            {
+                Console.WriteLine(counter++);
+            }
+
+            Console.WriteLine("counter = " + counter);
         }
     }
 }
