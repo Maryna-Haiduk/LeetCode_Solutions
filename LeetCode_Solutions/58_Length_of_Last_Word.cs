@@ -45,9 +45,15 @@ namespace LeetCode_Solutions
                         return lastWordLength;
                     }
                 }
+                
                 lastWordLength++;
             }
             return lastWordLength;
+        }
+
+        public int LengthOfLastWordThirdSolution(string s)
+        {
+            return s.Split(' ').Where(x => !string.IsNullOrEmpty(x)).Last().Length;
         }
     }
 }
