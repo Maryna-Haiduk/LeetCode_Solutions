@@ -11,7 +11,7 @@ namespace LeetCode_Solutions
         /* Given an array nums containing n distinct numbers in the range [0, n], 
          * return the only number in the range that is missing from the array.
          */
-        public int MissingNumber(int[] nums)
+        public static int MissingNumber(int[] nums)
         {
             int missingNumber = 0;
 
@@ -25,6 +25,22 @@ namespace LeetCode_Solutions
             {
                 return nums.Length;
             }
+
+            for (int i = 0; i < nums.Length; i++)
+            {
+                if (nums[i] != i)
+                {
+                    return missingNumber = nums[i] - 1;
+                }
+            }
+            return missingNumber;
+        }
+
+        public int MissingNumberSecondSolution(int[] nums)
+        {
+            int missingNumber = 0;
+
+            Array.Sort(nums);
 
             for (int i = 0; i < nums.Length; i++)
             {
