@@ -10,8 +10,10 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
-            int[] myArray = { 3, 0, 1 };
-            int result = _268_Missing_Number.MissingNumber(myArray);
+            string s = "badc";
+            string t = "baba";
+
+            bool result = _205_Isomorphic_Strings.IsIsomorphic(s, t);
             Console.WriteLine(result);
     }
     }
