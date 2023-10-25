@@ -10,11 +10,10 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
-            string s = "badc";
-            string t = "baba";
+            int num = 19;
+            bool isHappy = _202_Happy_Number.IsHappy(num);
 
-            bool result = _205_Isomorphic_Strings.IsIsomorphic(s, t);
-            Console.WriteLine(result);
-    }
+            Console.WriteLine(isHappy);
+        }
     }
 }

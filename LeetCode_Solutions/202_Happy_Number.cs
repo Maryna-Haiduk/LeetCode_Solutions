@@ -28,32 +28,55 @@ namespace LeetCode_Solutions
         12 + 02 + 02 = 1
         */
 
-        public bool IsHappy(int n)
+        public static bool IsHappy(int n)
         {
-            int[] digits = n.ToString().ToCharArray().Select(Convert.ToInt32).ToArray();
+            HashSet<int> seen = new HashSet<int>();
+            return IsHappyRecursive(n, seen);
+        }
+        public static bool IsHappyRecursive(int n, HashSet<int> seen)
+        {
+            if (n == 1) return true;
+            else if (seen.Contains(n)) return false;
 
-            if(digits.Length < 1)
+            seen.Add(n);
+
+            var digits = IntToDigitsArray(n);
+            int squaresResult = SumOfSquares(digits);
+
+            return IsHappyRecursive(squaresResult, seen);
+
+        }
+
+        public static int[] IntToDigitsArray(int number)
+        {
+            string stingNum = number.ToString();
+            var numbersCharArray = stingNum.ToCharArray();
+
+            List<int> numbersList = new List<int>();
+
+            foreach (var digitChar in numbersCharArray)
             {
-                return false;
+                int digit = (int)(digitChar - '0');
+                numbersList.Add(digit);
             }
 
-            int tmp = 0;
+            var digits = numbersList.ToArray();
+
+            return digits;
+        }
+
+
+        public static int SumOfSquares(int[] digits)
+        {
+            int squaresResult = 0;
 
             for (int i = 0; i < digits.Length; i++)
             {
-                digits[i] += tmp;
+                digits[i] *= digits[i];
+                squaresResult += digits[i];
             }
 
-            tmp *= digits.Length;
-
-            int result = 0;
-
-            while (result == 1)
-            {
-
-            }
-
-            return false;
+            return squaresResult;
         }
     }
 }

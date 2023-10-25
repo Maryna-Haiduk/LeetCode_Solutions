@@ -84,5 +84,37 @@ namespace LeetCode_Solutions
            
             return true;
         }
+
+        public static bool IsIsometricSecond(string s, string t)
+        {
+
+            if (s.Length != t.Length)
+            {
+                return false;
+            }
+
+            Dictionary<char, char> dic = new Dictionary<char, char>();
+
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (dic.ContainsKey(s[i]))
+                {
+                    if (dic[s[i]] != t[i])
+                    {
+                        return false;
+                    }
+                    else
+                    {
+                        continue;
+                    }
+                }
+                else if (dic.ContainsValue(t[i]))
+                {
+                    return false;
+                }
+                dic[s[i]] = t[i];
+            }
+            return true;
+        }
     }
 }
