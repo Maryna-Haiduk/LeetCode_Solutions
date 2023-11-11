@@ -10,10 +10,8 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
-            int num = 19;
-            bool isHappy = _202_Happy_Number.IsHappy(num);
-
-            Console.WriteLine(isHappy);
+            string myString = "alex    maryna    k     var  ";
+            _151_ReverseWords.ReverseWords(myString);
         }
     }
 }
