@@ -3,7 +3,6 @@ D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutio
 D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutions\bin\Debug\net6.0\LeetCode_Solutions.runtimeconfig.json
 D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutions\bin\Debug\net6.0\LeetCode_Solutions.dll
 D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutions\bin\Debug\net6.0\LeetCode_Solutions.pdb
-D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutions\obj\Debug\net6.0\LeetCode_Solutions.csproj.AssemblyReference.cache
 D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutions\obj\Debug\net6.0\LeetCode_Solutions.GeneratedMSBuildEditorConfig.editorconfig
 D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutions\obj\Debug\net6.0\LeetCode_Solutions.AssemblyInfoInputs.cache
 D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutions\obj\Debug\net6.0\LeetCode_Solutions.AssemblyInfo.cs
@@ -13,3 +12,4 @@ D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutio
 D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutions\obj\Debug\net6.0\LeetCode_Solutions.pdb
 D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutions\obj\Debug\net6.0\LeetCode_Solutions.genruntimeconfig.cache
 D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutions\obj\Debug\net6.0\ref\LeetCode_Solutions.dll
+D:\1-Programming\LeetCode\LeetCode_Solutions\LeetCode_Solutions\LeetCode_Solutions\obj\Debug\net6.0\LeetCode_Solutions.sourcelink.json

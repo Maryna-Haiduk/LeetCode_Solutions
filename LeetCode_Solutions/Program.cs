@@ -10,8 +10,10 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
-            string myString = "alex    maryna    k     var  ";
-            _151_ReverseWords.ReverseWords(myString);
+            string inputString = "hello";
+
+            var newString = ReverseString.GetRverseString(inputString);
+            Console.WriteLine(newString);
         }
     }
 }
