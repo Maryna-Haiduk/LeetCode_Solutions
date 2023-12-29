@@ -12,7 +12,7 @@ namespace LeetCode_Solutions
         public static void Main(string[] args)
         {
             string str = "apple cat caw";
-            Console.WriteLine(ReverseWords.ReverseOrderOfWords(str));
+            CountCharacters.CountEachCharacters(str);
             Console.ReadLine();
 
         }
