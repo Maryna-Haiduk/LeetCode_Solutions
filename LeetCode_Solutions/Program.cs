@@ -11,8 +11,8 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
-            string str = "apple";
-            Console.WriteLine(RemoveDuplicateCharacters.RemoveDuplicate(str));
+            string str = "187000";
+            Console.WriteLine(_2710_Remove_Trailing_Zeros_From_a_String.RemoveTrailingZeros(str));
             Console.ReadLine();
 
         }
