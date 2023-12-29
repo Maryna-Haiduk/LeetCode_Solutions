@@ -52,5 +52,17 @@ namespace LeetCode_Solutions
                 s[i] = tmp;
             }
         }
+
+        public static string ReverseStringThird(string s)
+        {
+            var strBuilder = new StringBuilder(s.Length);
+
+            for (int i = s.Length - 1; i >= 0; i--)
+            {
+                strBuilder.Append(s[i]);
+            }
+
+            return strBuilder.ToString();
+        }
     }
 }

@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
 namespace LeetCode_Solutions
@@ -10,10 +11,10 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
-            string inputString = "hello";
+            string str = "apple cat caw";
+            Console.WriteLine(ReverseWords.ReverseOrderOfWords(str));
+            Console.ReadLine();
 
-            var newString = ReverseString.GetRverseString(inputString);
-            Console.WriteLine(newString);
         }
     }
 }
