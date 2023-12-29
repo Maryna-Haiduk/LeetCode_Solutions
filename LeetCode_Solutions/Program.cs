@@ -11,8 +11,8 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
-            string str = "apple cat caw";
-            CountCharacters.CountEachCharacters(str);
+            string str = "apple";
+            Console.WriteLine(RemoveDuplicateCharacters.RemoveDuplicate(str));
             Console.ReadLine();
 
         }
