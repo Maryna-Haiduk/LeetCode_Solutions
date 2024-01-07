@@ -21,5 +21,19 @@ namespace LeetCode_Solutions
             var newString = string.Concat(set);
             return newString;
         }
+
+        public static string RemoveDupliates(string s) 
+        {
+            HashSet<char> uniqueChars = new HashSet<char>();
+            
+            for (int i = 0; i < s.Length; i++)
+            {
+                uniqueChars.Add(s[i]);
+            }
+
+            string uniqueString = string.Concat(uniqueChars);   
+            return uniqueString;
+
+        }
     }
 }
