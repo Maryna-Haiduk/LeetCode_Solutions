@@ -11,10 +11,15 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
-            string str = "alexmaryna";
-            Console.WriteLine(RemoveDuplicateCharacters.RemoveDupliates(str));
+            string str1 = "alex maryna g four";
+            string str2 = "alexela";
+
+            Console.WriteLine(Homework_Methods.IsPalindrom(str1));
+            Console.WriteLine(Homework_Methods.IsPalindrom(str2));
+
             Console.ReadLine();
 
         }
+
     }
 }
