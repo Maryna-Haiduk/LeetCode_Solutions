@@ -11,11 +11,15 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
-            string str1 = "alex maryna g four";
-            string str2 = "alexela";
+            string str1 = "alex maryna";
+            int[] myarr = { 4, 9, 2, 4 };
 
-            Console.WriteLine(Homework_Methods.IsPalindrom(str1));
-            Console.WriteLine(Homework_Methods.IsPalindrom(str2));
+            BubbleSort.BubbeSortAl(myarr);
+
+            foreach (int i in myarr) 
+            {
+                Console.WriteLine(i);   
+            }
 
             Console.ReadLine();
 
