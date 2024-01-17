@@ -1,0 +1,54 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace LeetCode_Solutions
+{
+    internal class _108_SortedArrayToBST
+    {
+        /*
+         * 108. Convert Sorted Array to Binary Search Tree
+
+                Given an integer array nums where the elements are sorted in ascending order, 
+                convert it to a height-balanced binary search tree.
+         */
+
+
+        public TreeNode SortedArrayToBST(int[] nums)
+        {
+            if (nums == null || nums.Length == 0)
+                return null;
+
+            return SortedArrayToBSTHelper(nums, 0, nums.Length - 1);
+        }
+
+        private TreeNode SortedArrayToBSTHelper(int[] nums, int left, int right)
+        {
+            if (left > right)
+                return null;
+
+            int mid = (left + right) / 2;
+
+            TreeNode root = new TreeNode(nums[mid]);
+
+            root.left = SortedArrayToBSTHelper(nums, left, mid - 1);
+            root.right = SortedArrayToBSTHelper(nums, mid + 1, right);
+
+            return root;
+        }
+        public class TreeNode
+        {
+            public int val;
+            public TreeNode left;
+            public TreeNode right;
+            public TreeNode(int val = 0, TreeNode left = null, TreeNode right = null)
+            {
+                this.val = val;
+                this.left = left;
+                this.right = right;
+            }
+        }
+    }
+}
