@@ -12,14 +12,11 @@ namespace LeetCode_Solutions
         public static void Main(string[] args)
         {
             string str1 = "alex maryna";
-            int[] myarr = { 4, 9, 2, 4 };
+            int[] myarr = { 14, 12, 9, 2, 4, 10, 11 };
 
-            BubbleSort.BubbeSortAl(myarr);
+            //BubbleSort.BubbeSortAl(myarr);
 
-            foreach (int i in myarr) 
-            {
-                Console.WriteLine(i);   
-            }
+            Console.WriteLine(OceanView.FindOceanViewBuildings(myarr));
 
             Console.ReadLine();
 

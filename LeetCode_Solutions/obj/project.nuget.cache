@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "6o9593ZeaLi//IXkxYAlVC2BELME7tAdLg7ddwh4CqCNHZFYzoNMXb8ot2hoIfnQzW1/XOqxfPDP85Bw4E7mpw==",
+  "dgSpecHash": "vt7bkmwevr4bGR98KP1+covaHqYl+LLtVKE17iAeCWY4a6kf3kShF2v7ej/zuNvcFpNXhYzhZxLzZDJ8opOnLQ==",
   "success": true,
   "projectFilePath": "D:\\1-Programming\\LeetCode\\LeetCode_Solutions\\LeetCode_Solutions\\LeetCode_Solutions\\LeetCode_Solutions.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Марiна\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.26\\microsoft.windowsdesktop.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Марiна\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.26\\microsoft.netcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Марiна\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.26\\microsoft.aspnetcore.app.ref.6.0.26.nupkg.sha512",
+    "C:\\Users\\Марiна\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.26\\microsoft.netcore.app.host.win-x64.6.0.26.nupkg.sha512"
+  ],
   "logs": []
 }
