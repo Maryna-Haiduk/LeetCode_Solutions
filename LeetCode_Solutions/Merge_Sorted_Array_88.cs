@@ -27,20 +27,12 @@ namespace LeetCode_Solutions
             if (m == 0 && n == 0 || m == 1 && n == 0 || m == 0 && n == 1)
                 return;
 
-            int tmp = 0;
-
-            for (int i = 0; i < m; i++)
+            for (int i = m, j = 0; i < nums1.Length & j < n ; i++, j++)
             {
-                for (int j = 0; j < n; j++)
-                {
-                    if (nums1[i] > nums2[j])
-                    {
-                        tmp = nums1[i];
-                        nums1[i] = nums2[j];
-                        nums2[j] = tmp;
-                    }
-                }
+                nums1[i] = nums2[j];
             }
+
+            Array.Sort(nums1);
         }
     }
 }
