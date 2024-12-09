@@ -11,15 +11,9 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
-            string myString = "the cattle was rattled by the battery";
-            IList<string> list = new List<string>();
-            list.Add("catt");
-            list.Add("cat");
-            list.Add("bat");
-            list.Add("rat");
-
-            Console.WriteLine(list);
-            Console.WriteLine(_648_Replace_Words.ReplaceWords(list, myString));
+            int[] myArray = { 7, 1, 5, 3, 6, 4 };
+            int result = BestTimeToBuyAndSellStock_121.MaxProfit1(myArray);
+            Console.WriteLine(result);
         }
 
     }
