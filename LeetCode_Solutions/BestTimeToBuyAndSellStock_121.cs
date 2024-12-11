@@ -45,25 +45,21 @@ namespace LeetCode_Solutions
         public static int MaxProfit(int[] prices)
         {
             int maxProfit = 0;
+            int minPrice = int.MaxValue;
 
-            for (int i = 0; i < prices.Length - 1; i++)
+            foreach (int price in prices)
             {
-                for (int j = i + 1; j < prices.Length - 1; j++)
+                if (price < minPrice)
                 {
-                    if (prices[j] < prices[i])
-                    {
-                        continue;
-                    }
-                    else
-                    {
-                        int profit = prices[j] - prices[i];
-                        if (profit > maxProfit)
-                        {
-                            maxProfit = profit;
-                        }
-                    }
+                    minPrice = price;
+                }
+
+                if (price - minPrice > maxProfit)
+                {
+                    maxProfit = price - minPrice;
                 }
             }
+
             return maxProfit;
         }
     }
