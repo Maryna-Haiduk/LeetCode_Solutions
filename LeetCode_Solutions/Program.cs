@@ -11,8 +11,8 @@ namespace LeetCode_Solutions
     {
         public static void Main(string[] args)
         {
-            int[] myArray = { 7, 1, 5, 3, 6, 4 };
-            int result = BestTimeToBuyAndSellStock_121.MaxProfit1(myArray);
+            int[] myArray = { 3, 3 };
+            int result = BestTimeToBuyAndSellStock_121.MaxProfit2(myArray);
             Console.WriteLine(result);
         }
 
